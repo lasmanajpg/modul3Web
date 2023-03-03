@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+}
+.tombol {
+  background-color: #FBA04F; /* warna latar belakang tombol */
+  border: none; /* menghilangkan border tombol */
+  color: #1A1A1A; /* warna teks tombol */
+  padding: 12px 24px; /* jarak antara teks dengan batas luar tombol */
+  text-align: center; /* mengatur teks tombol menjadi rata tengah */
+  text-decoration: none; /* menghilangkan dekorasi hyperlink pada tombol */
+  display: inline-block; /* menampilkan tombol sebagai elemen inline */
+  font-size: 16px; /* ukuran teks tombol */
+  margin: 1px; /* jarak antara tombol dengan elemen lainnya */
+  border-radius: 4px; /* membuat sudut tombol menjadi lebih melengkung */
+  transition-duration: 0.3s; /* waktu transisi saat tombol dihover */
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.tombol:hover {
+  background-color: white; /* warna latar belakang tombol saat dihover */
+  color: #1A1A1A; /* warna teks tombol saat dihover */
+  border: 2.5px solid #FBA04F; /* menambahkan border saat tombol dihover */
+}
+
+main {
+  margin-top: 150px;
+}
+
+footer {
+  position: absolute;
+  top: calc( 100vh + 300px );
+  width: 100%;
+  background-color: #CE2949;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.header{
+  position: fixed;
+  width: 100%;
+  background-color: #CE2949;
+}
+
+.header .logo{
+  margin: 30px 30px 30px 30px;
+  width: 300px;
+}
+
+.header .hiasan{
+  float: right;
+  width: 400px;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee {
+  display: inline-block.run-inn ;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+  margin-top: -3px;
+
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.kiri {
+  width: 50%;
+  height: 100vh;
+  float: left;
+  margin-left: 20px;
+}
+
+.kanan {
+  float: right;
+  width: 45%;
+  right: 0;
+  margin-bottom: 100px;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-family: arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 2000px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+
+  .kiri {
+    width: 90%;
+  }
+
+  .kanan {
+    width: 90%;
+    margin-top: -100px;
+    margin-right: -20px;
+    margin-bottom: 100px;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
